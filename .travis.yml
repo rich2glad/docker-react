@@ -6,4 +6,4 @@ before_install:
   - docker build -t rich2glad/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run rich2glad/docker npm run test
+  - docker run rich2glad/docker-react npm run test -- --coverage
